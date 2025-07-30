@@ -1,0 +1,106 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 10px 0; /* ⬅️ adds space at top and bottom */
+  min-height: 100vh;
+  background: linear-gradient(to right, #232526, #414345);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* ⬅️ from center to top-start */
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #fff;
+}
+
+
+
+h2 {
+  margin-top: 10px;
+  font-size: 2.5rem; /* slightly smaller */
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 12px;
+  padding: 20px;
+  background: #1c1c1c;
+  border: 5px solid #888;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+}
+
+
+.cell {
+  width: 120px;
+  height: 120px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #d3cce3, #736e79); /* fancy gradient */
+  color: #2d3436;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3), -2px -2px 6px rgba(255,255,255,0.1);
+  transition: transform 0.2s ease-in , box-shadow 0.2s ;
+}
+
+.cell:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+#restart-button {
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(160, 100, 255, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#restart-button:hover {
+  transform: scale(1.07);
+  background: linear-gradient(135deg, #a777e3, #6e8efb);
+  box-shadow: 0 8px 20px rgba(160, 100, 255, 0.5);
+}
+
+#restart-button:active {
+  transform: scale(0.96);
+  box-shadow: 0 3px 8px rgba(160, 100, 255, 0.4);
+}
+
+.subtitle {
+  color: #ccc;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #00ffc8;
+  text-shadow: 0 0 10px rgba(0, 255, 200, 0.2);
+}
+
+footer {
+  bottom: 15px;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #888;
+}
