@@ -3,7 +3,8 @@ A classic, sleek, and responsive 2-player Tic-Tac-Toe game built with HTML, CSS,
 
 Live Preview
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/005be02c-a839-4330-8866-ca5bace0a6ae" />
+<img width="1919" height="970" alt="image" src="https://github.com/user-attachments/assets/692f0daf-81fc-456e-9da7-27503ddf1647" />
+
 
 
 Features
